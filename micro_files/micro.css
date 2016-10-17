@@ -1,0 +1,124 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+.testimonials {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.micro-logo {
+  text-indent: -9999px;
+  width: 170px;
+  height: 60px;
+  background: url(logo.png) #ffffff no-repeat;  
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.features,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+.container-narrow > hr {
+  margin: 10px 0;
+}
+
+/* Main features message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+p.lead {
+    font-size: 35px;
+}
+.btn, .btn:focus {
+  background-color: #3C92D1;
+  border: none;
+}
+.btn:active, .btn:active:focus, .btn:target, .btn-success:active, .btn-success:active:focus, .btn-lg:active {
+    background-color: #391A80;
+}
+.btn:hover {
+  background-color: #2F3590;
+}
+/* .btn:active .btn:focus { */
+/*     background-color: #2F3590; */
+/* } */
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting features content */
+.features {
+  margin: 40px 0;
+  margin-top: 10px;
+}
+.heading {
+    margin: 40px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #2F3590; 
+}
+.getting-involved {
+    margin: 40px 0;
+    margin-top: 10px;
+}
+.features p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .features,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #2F3590;
+}
+
