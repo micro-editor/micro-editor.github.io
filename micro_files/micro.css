@@ -19,7 +19,6 @@ body {
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.features,
 .footer {
   padding-right: 15px;
   padding-left: 15px;
@@ -82,10 +81,10 @@ p.lead {
 }
 
 /* Supporting features content */
-.features {
-  margin: 40px 0;
-  margin-top: 10px;
-}
+/* .features { */
+/*   margin: 40px 0; */
+/*   margin-top: 10px; */
+/* } */
 .heading {
     margin: 40px 0;
     margin-top: 0;
@@ -100,24 +99,6 @@ p.lead {
   margin-top: 28px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .features,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
     background-color: #2F3590;
 }
