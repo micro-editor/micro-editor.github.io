@@ -5,16 +5,17 @@ body {
   font-size: 16px;
 }
 .testimonials {
-    list-style: none;
-    list-style-type: none;
-    padding: 0;
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
 }
 
 .micro-logo {
   text-indent: -9999px;
-  width: 170px;
+  width: 60px;
   height: 60px;
-  background: url(logo.png) #ffffff no-repeat;  
+  background: url(micro-logo-mark.svg) #ffffff no-repeat;
+  background-size: 60px 60px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -98,8 +99,21 @@ p.lead {
 .features p + h4 {
   margin-top: 28px;
 }
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #2F3590;
+  border-radius: 1px;
+}
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+.nav > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:hover {
+    border-radius: 5px;
+}
+
+.nav > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
     background-color: #2F3590;
+    color: #fff;
+    border-radius: 5px;
 }
 

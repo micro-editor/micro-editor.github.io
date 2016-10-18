@@ -26,14 +26,19 @@
 
         <div class="container">
             <div class="header clearfix">
-                <nav>
-                    <ul class="nav nav-pills pull-right">
-                        <li role="presentation"><a href="index.html">Home</a></li>
-                        <li role="presentation" class="active"><a href="about.html">About</a></li>
-                        <li role="presentation"><a href="https://github.com/zyedidia/micro">Development</a></li>
+                <div class="navbar-header pull-left">
+                    <h3 class="micro-logo">Micro</h3>
+                </div>
+
+                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="index.html">home</a></li>
+                        <li class="active"><a href="about.html">about</a></li>
+                        <li><a href="https://github.com/zyedidia/micro">development</a></li>
                     </ul>
-                </nav>
-                <h3 class="micro-logo">Micro</h3>
+                </div>
             </div>
 
             <div class="row about">
@@ -55,7 +60,7 @@
                         <h2>Documentation and Help</h2>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-sm-8">
                     <p>Micro has a built-in help system which you can access by pressing <code>Ctrl-E</code> and typing <code>help topic</code>. You can also press Ctrl-g to open the main help file. The help files are also viewable online in the Github repository.</p>
                     <p>I also recommend reading the <a href="https://github.com/zyedidia/micro/tree/master/runtime/help/tutorial.md">tutorial</a> for
                         a brief introduction to the more powerful configuration features micro offers.</p>
@@ -63,9 +68,9 @@
                     <br>
                     <p>If you have any questions, feel free to open an issue in the <a href="https://github.com/zyedidia/micro/issues">Github issue tracker</a> or to ask more informally in the <a href="https://gitter.im/zyedidia/micro">Gitter chat</a></p>
                 </div>
-                <div class="col-lg-1">
+                <div class="col-sm-1">
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-3">
                     <h4>Help topics</h4>
                     <ul style="list-style-type:none; padding:0;">
                         <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/help.md">main help</a></li>
