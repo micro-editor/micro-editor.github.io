@@ -16,6 +16,7 @@ body {
   height: 60px;
   background: url(micro-logo-mark.svg) #ffffff no-repeat;
   background-size: 60px 60px;
+  display: inline-block;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
