@@ -32,7 +32,6 @@
         </script>
     </head>
     <body onload="fetchData()">
-
         <div class="container">
             <div class="header clearfix">
                 <div class="navbar-header pull-left">
@@ -61,13 +60,11 @@
                           checked="true">Name</option>
                         <input type="radio" name="searchby" value="Description">Description</option>
                         <input type="radio" name="searchby" value="Tags">Tags</option>
-                        <br /><br />
+                        <br/><br/>
                       <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search plugins..."
-                          onchange="search()" id="keyword">
+                        <input type="text" class="form-control" placeholder="Search plugins..." onchange="search(false)" id="keyword">
                         <span class="input-group-btn">
-                          <button class="btn btn-default" type="button"
-                            onclick="search()">Search</button>
+                          <button id="searchbutton" class="btn btn-success" type="button" onclick="search(false)">Search</button>
                         </span>
                       </div><!-- /input-group -->
                     </div>

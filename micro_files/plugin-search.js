@@ -17,13 +17,14 @@ function fetchData(){
           .then(json=>{
             pluginData.push(json[0]);
             console.log(json[0]);
+            search(true)
           }));
       });
     })
   );
 }
 
-function search(){
+function search(collapse){
   switch(document.querySelector('input[name="searchby"]:checked').value){
     case 'Name':
       console.log('Search by Name');
@@ -31,7 +32,7 @@ function search(){
         return item.Name.includes(document.getElementById('keyword').value);
       });
       console.log(searchResults);
-      showResults(searchResults);
+      showResults(searchResults, collapse);
       break;
     case 'Description':
       console.log('Search by Description');
@@ -39,7 +40,7 @@ function search(){
         return item.Description.includes(document.getElementById('keyword').value);
       });
       console.log(searchResults);
-      showResults(searchResults);
+      showResults(searchResults, collapse);
       break;
     case 'Tags':
       console.log('Search by Tags');
@@ -47,14 +48,18 @@ function search(){
         return item.Tags.includes(document.getElementById('keyword').value);
       });
       console.log(searchResults);
-      showResults(searchResults);
+      showResults(searchResults, collapse);
       break;
   }
 }
 
-function showResults(results){
-  let table = document.getElementById('results');
+function showResults(results, collapsed) {
+  var table = document.getElementById('results');
   table.innerHTML = '';
+  var collapseStr = "panel-collapse collapse";
+  if (!collapsed) {
+    collapseStr += " in";
+  }
   results.forEach(item=>{
     table.innerHTML +=
       `<div class="panel panel-default">
@@ -66,7 +71,7 @@ function showResults(results){
             </a>
           </h4>
         </div>
-        <div id="c-${item.Name}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="h-${item.Name}">
+        <div id="c-${item.Name}" class="${collapseStr}" role="tabpanel" aria-labelledby="h-${item.Name}">
           <div class="panel-body">
             <p>${item.Description}</p>
             <p><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> ${item.Tags.toString()}<p>
@@ -74,7 +79,7 @@ function showResults(results){
             <p>To install this plugin, open micro from your CLI,
             press [Crtl + E] then run the command line below.
             Once you are done, restart micro.</p>
-            <div class="well">plugin install ${item.Name}</div>
+            <div class="well">&gt; plugin install ${item.Name}</div>
           </div>
         </div>
       </div>`;
