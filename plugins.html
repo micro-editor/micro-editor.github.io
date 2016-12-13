@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="./micro_files/icon.png">
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <title>Micro - Plugins</title>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="micro_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="micro_files/micro.css" rel="stylesheet">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-66418971-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body onload="fetchData()">
+
+        <div class="container">
+            <div class="header clearfix">
+                <div class="navbar-header pull-left">
+                    <a href="index.html" class="micro-logo">Micro</a>
+                </div>
+
+                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li class="active"><a href="plugins.html">plugins</a></li>
+                        <li><a href="https://github.com/zyedidia/micro">development</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row about">
+                <div class="col-lg-12">
+                    <div class="heading">
+                        <h2>Plugins</h2>
+                    </div>
+                    <div>
+                        <input type="radio" name="searchby" value="Name"
+                          checked="true">Name</option>
+                        <input type="radio" name="searchby" value="Description">Description</option>
+                        <input type="radio" name="searchby" value="Tags">Tags</option>
+                        <br /><br />
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search plugins..."
+                          onchange="search()" id="keyword">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="button"
+                            onclick="search()">Search</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div>
+                    <hr />
+                    <div class="panel-group" id="results" role="tablist" aria-multiselectable="true">
+
+                    </div>
+                </div>
+            </div>
+
+
+                <footer class="footer">
+                    <p>View the source code for this website on <a href="https://github.com/micro-editor/micro-editor.github.io">Github</a></p>
+                </footer>
+            </div> <!-- /container -->
+
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="micro_files/ie10-viewport-bug-workaround.js"></script>
+            <script src="micro_files/plugin-search.js"></script>
+        </body>
+    </html>
