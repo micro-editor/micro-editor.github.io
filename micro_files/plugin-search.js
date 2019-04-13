@@ -25,6 +25,15 @@ function fetchData() {
 });
 }
 
+// gets the repo url from a .zip file defined in plugin's repo.json
+function getRepoURL(archiveUrl) {
+	var url = new URL(archiveUrl)
+	// we assume that the pathname starts with the following format:
+	// /[username]/[repo_name]
+	var path = url.pathname.replace(/^\/([^\/]+)\/(([^\/]+)).+/, '/$1/$2')
+	return url.origin + path
+}
+
 function search(collapse) {
     switch (document.querySelector('input[name="searchby"]:checked').value) {
         case 'Name':
@@ -124,6 +133,10 @@ function showResults(results, collapsed) {
 				display_item_allversions += '</p>';
 			}
 
-        table.innerHTML += '<div class="panel panel-default">\n        <div class="panel-heading" role="tab" id="h-' + item.Name + '">\n          <h4 class="panel-title">\n            <a role="button" data-toggle="collapse" data-parent="#results"\n              href="#c-' + item.Name + '" aria-controls="c-' + item.Name + '">\n              ' + item.Name + ' ' + item.Versions[item.Versions.length - 1].Version + '\n            </a>\n          </h4>\n        </div>\n        <div id="c-' + item.Name + '" class="' + collapseStr + '" role="tabpanel" aria-labelledby="h-' + item.Name + '">\n          <div class="panel-body">\n            <p>' + item.Description + '</p>\n            <p><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> ' + display_item_tag + display_item_allversions + display_item_require + '</p>\n            <p>To install this plugin, open micro from your CLI,\n            press [Crtl + E] then run the command line below.\n            Once you are done, restart micro.</p>\n            <div class="well">&gt; plugin install ' + item.Name + '</div>\n          </div>\n        </div>\n      </div>';
+			// Get url from the latest version
+			var latest_version = item.Versions[item.Versions.length - 1]
+			var repo_url = getRepoURL(latest_version.Url)
+
+        table.innerHTML += '<div class="panel panel-default">\n        <div class="panel-heading" role="tab" id="h-' + item.Name + '">\n          <h4 class="panel-title">\n            <a role="button" data-toggle="collapse" data-parent="#results"\n              href="#c-' + item.Name + '" aria-controls="c-' + item.Name + '">\n              ' + item.Name + ' ' + item.Versions[item.Versions.length - 1].Version + '\n            </a>\n          </h4>\n        </div>\n        <div id="c-' + item.Name + '" class="' + collapseStr + '" role="tabpanel" aria-labelledby="h-' + item.Name + '">\n          <div class="panel-body">\n            <p>' + item.Description + '</p>\n            <p><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp; <a href="' + repo_url + '">Repo</a></p>\n            <p><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>&nbsp; ' + display_item_tag + display_item_allversions + display_item_require + '</p>\n            <p>To install this plugin, open micro from your CLI,\n            press [Crtl + E] then run the command line below.\n            Once you are done, restart micro.</p>\n            <div class="well">&gt; plugin install ' + item.Name + '</div>\n          </div>\n        </div>\n      </div>';
     });
 }
