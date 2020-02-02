@@ -29,6 +29,18 @@
 
             ga('create', 'UA-66418971-2', 'auto');
             ga('send', 'pageview');
+
+            function selectText(elem) {
+                if (document.selection) {
+                    var range = document.body.createTextRange();
+                    range.moveToElementText(elem);
+                    range.select();
+                } else if (window.getSelection) {
+                    var range = document.createRange();
+                    range.selectNode(elem);
+                    window.getSelection().addRange(range);
+                }
+            }
         </script>
     </head>
 
@@ -56,6 +68,7 @@
                 <p style="font-weight:bold;" class="lead heading">micro</p>
                 <p class="lead">a modern and intuitive terminal-based text editor</p>
                 <p><a class="btn btn-lg btn-success" href="https://github.com/zyedidia/micro/releases/latest" role="button">Download</a></p>
+                <pre style="max-width:20em;clear:both;text-align:center;margin:0 auto"><code id="selectable" onclick="selectText(this)">curl https://getmic.ro | bash</code></pre><br>
                 <a class="github-button" href="https://github.com/zyedidia/micro" data-size="large" data-show-count="true" aria-label="Star zyedidia/micro on GitHub">Star</a>
                 <p><a style='font-size: 16px;' href="https://github.com/zyedidia/micro#installation">See detailed installation instructions</a></p>
             </div>
@@ -137,7 +150,7 @@
                     <h4>Mouse Support</h4>
                     <p>Micro has full support for the mouse. This means you can click and drag to select text, double click select by word, and triple click to select by line.</p>
 
-                    <h4>Terminal Emulator (beta)</h4>
+                    <h4>Terminal Emulator</h4>
                     <p>Run a real interactive shell from within micro. You could open up a split with code on one side and bash on the other -- all from within micro.</p>
                 </div>
 
