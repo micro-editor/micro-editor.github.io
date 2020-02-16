@@ -151,7 +151,10 @@ function toggleElement (el, state) {
 
 function togglePanelState (el, { expand = false }) {
   const tabpanel = el.querySelector('[role="tabpanel"]');
-  tabpanel && tabpanel.classList.toggle('in', expand);
+  if (!tabpanel) return;
+  tabpanel.classList.toggle('in', expand);
+  if (expand) tabpanel.style.height = '';
+  tabpanel.setAttribute('aria-expanded', expand);
 }
 
 async function fetchJson (url) {
