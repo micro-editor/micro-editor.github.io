@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "nanohtml/lib/browser": "./nanohtml/lib/browser.js",
+    "p-map": "./p-map.js",
+    "semver/functions/rcompare": "./semver/functions/rcompare.js",
+    "strip-json-comments": "./strip-json-comments.js",
+    "whatwg-fetch": "./whatwg-fetch.js"
+  }
+}

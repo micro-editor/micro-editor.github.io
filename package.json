@@ -1,0 +1,58 @@
+{
+  "name": "micro-editor.github.io",
+  "private": true,
+  "description": "This is the website for the [micro text editor](https://github.com/zyedidia/micro).",
+  "homepage": "https://github.com/micro-editor/micro-editor.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/micro-editor/micro-editor.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micro-editor/micro-editor.github.io.git"
+  },
+  "license": "MIT",
+  "author": "Zachary Yedidia <zyedidia@gmail.com> (https://github.com/zyedidia)",
+  "scripts": {
+    "build": "snowpack --optimize",
+    "dev": "servor . plugins.html --reload",
+    "lint": "eslint micro_files --ext .js",
+    "prepare": "snowpack"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
+  },
+  "dependencies": {
+    "nanohtml": "^1.9.0",
+    "p-map": "^3.0.0",
+    "semver": "^7.1.3",
+    "strip-json-comments": "^3.0.1",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-semistandard": "^15.0.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.3",
+    "servor": "^3.2.0",
+    "snowpack": "^1.3.1"
+  },
+  "snowpack": {
+    "webDependencies": [
+      "nanohtml/lib/browser.js",
+      "p-map",
+      "semver/functions/rcompare.js",
+      "strip-json-comments",
+      "whatwg-fetch"
+    ],
+    "installOptions": {
+      "nomodule": "./micro_files/plugin-search.js",
+      "nomoduleOutput": "plugin-search.bundle.js"
+    }
+  }
+}
