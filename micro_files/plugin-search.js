@@ -1,5 +1,5 @@
-'use strict';
-
+import '/web_modules/bootstrap.js';
+import '/web_modules/github-buttons.js';
 import '/web_modules/whatwg-fetch.js';
 import html from '/web_modules/nanohtml/lib/browser.js';
 import pMap from '/web_modules/p-map.js';
