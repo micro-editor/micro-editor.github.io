@@ -48,7 +48,9 @@ var e=window.HTMLElement,i=window.XMLHttpRequest,n=(i&&i.prototype&&"withCredent
           </p>
         `;var e})}
         <p>To install this plugin, run the following command from your CLI</p>
-        <div class="well"><code>$ micro -plugin install ${t}</code></div>
+        <div class="well">
+          <code class="install-instructions">micro -plugin install ${t}</code>
+        </div>
       </div>
     </div>
   </div>

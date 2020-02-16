@@ -67,7 +67,9 @@ const template = ({ name, description, versions, website, tags, collapsed }) => 
           </p>
         `)}
         <p>To install this plugin, run the following command from your CLI</p>
-        <div class="well"><code>$ micro -plugin install ${name}</code></div>
+        <div class="well">
+          <code class="install-instructions">micro -plugin install ${name}</code>
+        </div>
       </div>
     </div>
   </div>
