@@ -1,4 +1,4 @@
-# Micro Editor Website
+# This is a Micro Editor Website
 
 This is the website for the [micro text editor](https://github.com/zyedidia/micro).
 
