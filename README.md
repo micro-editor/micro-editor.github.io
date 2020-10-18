@@ -11,3 +11,4 @@ If you find any bugs or want to contribute, just fork and open a pull request.
 # License
 
 This website is licensed under the MIT license.
+Thanks for visit our site :)
