@@ -132,3 +132,7 @@ p.lead {
     border-radius: 5px;
 }
 
+.bash::before {
+	content: '$ ';
+}
+
