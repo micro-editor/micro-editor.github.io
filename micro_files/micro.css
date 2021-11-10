@@ -122,11 +122,12 @@ p.lead {
     border-radius: 1px;
 }
 
-.nav > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:hover {
+.nav > li > a {
     border-radius: 5px;
+    margin-left: 15px;
 }
 
-.nav > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+.nav > li.active > a {
     background-color: #2F3590;
     color: #fff;
     border-radius: 5px;
