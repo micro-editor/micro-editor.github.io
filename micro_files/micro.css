@@ -34,39 +34,54 @@ input[type="radio"] {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.footer {
+header,
+footer {
     padding-right: 15px;
     padding-left: 15px;
 }
 
 /* Custom page header */
-.header {
+header {
     padding-bottom: 20px;
     border-bottom: 1px solid #e5e5e5;
 }
 /* Make the masthead heading the same height as the navigation */
-.header h3 {
+header h3 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
 }
 
 /* Custom page footer */
-.footer {
+footer {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
 }
 
 /* Customize container */
+header, main, footer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @media (min-width: 768px) {
-    .container {
+    header, main, footer {
         max-width: 1100px;
     }
 }
+
 .container-narrow > hr {
     margin: 10px 0;
+}
+
+/* Fix scrollbars moving over the body if possible */
+@media (min-width: 800px) {
+  :root {
+    scrollbar-gutter: stable both-edges;
+  }
 }
 
 /* Main features message and sign up button */
@@ -122,11 +137,16 @@ p.lead {
     border-radius: 1px;
 }
 
-.nav > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:hover {
+nav ul {
+    display: flex;
+    gap: 1ch;
+}
+
+nav ul.nav > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:hover {
     border-radius: 5px;
 }
 
-.nav > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+nav ul.nav > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
     background-color: #2F3590;
     color: #fff;
     border-radius: 5px;
