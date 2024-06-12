@@ -77,6 +77,13 @@ header, main, footer {
     margin: 10px 0;
 }
 
+/* Fix scrollbars moving over the body if possible */
+@media (min-width: 800px) {
+  :root {
+    scrollbar-gutter: stable both-edges;
+  }
+}
+
 /* Main features message and sign up button */
 .jumbotron {
     text-align: center;
