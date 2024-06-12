@@ -45,190 +45,188 @@
     </head>
 
     <body>
-
-        <div class="container">
-            <header class="clearfix">
-                <div class="navbar-header pull-left">
-                    <a href="index.html" class="micro-logo">Micro</a>
-                </div>
-
-                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-
-                <nav class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav pull-right">
-                        <li class="active"><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="plugins.html">plugins</a></li>
-                        <li><a href="https://github.com/zyedidia/micro">development</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <div class="jumbotron">
-                <p style="font-weight:bold;" class="lead heading">micro</p>
-                <p class="lead">a modern and intuitive terminal-based text editor</p>
-                <p><a class="btn btn-lg btn-success" href="https://github.com/zyedidia/micro/releases/latest" role="button">Download</a></p>
-                <pre style="max-width:20em;clear:both;text-align:center;margin:0 auto"><code id="selectable" onclick="selectText(this)">curl https://getmic.ro | bash</code></pre><br>
-                <a class="github-button" href="https://github.com/zyedidia/micro" data-size="large" data-show-count="true" aria-label="Star zyedidia/micro on GitHub">Star</a>
-                <p><a style='font-size: 16px;' href="https://github.com/zyedidia/micro#installation">See detailed installation instructions</a></p>
-            </div>
-            <hr>
-
-            <div id="screenshots" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#screenshots" data-slide-to="0" class="active"></li>
-                    <li data-target="#screenshots" data-slide-to="1"></li>
-                    <li data-target="#screenshots" data-slide-to="2"></li>
-                    <li data-target="#screenshots" data-slide-to="3"></li>
-                    <li data-target="#screenshots" data-slide-to="4"></li>
-                    <li data-target="#screenshots" data-slide-to="5"></li>
-                    <li data-target="#screenshots" data-slide-to="6"></li>
-                    <li data-target="#screenshots" data-slide-to="7"></li>
-                    <li data-target="#screenshots" data-slide-to="8"></li>
-                    <li data-target="#screenshots" data-slide-to="9"></li>
-                    <li data-target="#screenshots" data-slide-to="10"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="screenshots/micro-monokai.png" alt="Chania">
-                    </div>
-
-                    <div class="item">
-                        <img src="screenshots/micro-one-dark.png" alt="Flower">
-                    </div>
-
-                    <div class="item">
-                        <img src="screenshots/micro-darcula.png" alt="Flower">
-                    </div>
-
-                    <div class="item">
-                        <img src="screenshots/micro-twilight.png" alt="Flower">
-                    </div>
-
-                    <div class="item">
-                        <img src="screenshots/micro-railscast.png" alt="Flower">
-                    </div>
-
-                    <div class="item">
-                        <img src="screenshots/micro-solarized.png" alt="Chania">
-                    </div>
-
-                    <div class="item">
-                        <img src="screenshots/micro-atom-dark.png" alt="Flower">
-                    </div>
-
-                    <div class="item">
-                        <img src="screenshots/micro-gruvbox.png" alt="Flower">
-                    </div>
-
-                    <div class="item">
-                        <img src="screenshots/micro-material.png" alt="Flower">
-                    </div>
-
-                    <div class="item">
-                        <img src="screenshots/micro-gotham.png" alt="Flower">
-                    </div>
-
-                    <div class="item">
-                        <img src="screenshots/micro-zenburn.png" alt="Flower">
-                    </div>
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#screenshots" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#screenshots" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+        <header class="clearfix">
+            <div class="navbar-header pull-left">
+                <a href="index.html" class="micro-logo">Micro</a>
             </div>
 
-            <hr>
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 
-            <div class="row features">
-                <div class="heading">
-                    <div class="col-lg-12">
-                        <h2>Features</h2>
-                    </div>
+            <nav class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active"><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="plugins.html">plugins</a></li>
+                    <li><a href="https://github.com/zyedidia/micro">development</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+        <div class="jumbotron">
+            <p style="font-weight:bold;" class="lead heading">micro</p>
+            <p class="lead">a modern and intuitive terminal-based text editor</p>
+            <p><a class="btn btn-lg btn-success" href="https://github.com/zyedidia/micro/releases/latest" role="button">Download</a></p>
+            <pre style="max-width:20em;clear:both;text-align:center;margin:0 auto"><code id="selectable" onclick="selectText(this)">curl https://getmic.ro | bash</code></pre><br>
+            <a class="github-button" href="https://github.com/zyedidia/micro" data-size="large" data-show-count="true" aria-label="Star zyedidia/micro on GitHub">Star</a>
+            <p><a style='font-size: 16px;' href="https://github.com/zyedidia/micro#installation">See detailed installation instructions</a></p>
+        </div>
+        <hr>
+
+        <div id="screenshots" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#screenshots" data-slide-to="0" class="active"></li>
+                <li data-target="#screenshots" data-slide-to="1"></li>
+                <li data-target="#screenshots" data-slide-to="2"></li>
+                <li data-target="#screenshots" data-slide-to="3"></li>
+                <li data-target="#screenshots" data-slide-to="4"></li>
+                <li data-target="#screenshots" data-slide-to="5"></li>
+                <li data-target="#screenshots" data-slide-to="6"></li>
+                <li data-target="#screenshots" data-slide-to="7"></li>
+                <li data-target="#screenshots" data-slide-to="8"></li>
+                <li data-target="#screenshots" data-slide-to="9"></li>
+                <li data-target="#screenshots" data-slide-to="10"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="screenshots/micro-monokai.png" alt="Chania">
                 </div>
-                <div class="col-sm-6">
-                    <h4>Easy to Use</h4>
-                    <p>Micro's number one feature is being easy to install (it's just a static binary with no dependencies) and easy to use.</p>
 
-                    <h4>Highly Customizable</h4>
-                    <p>Use a simple json format to configure your options and rebind keys to your liking. If you need more power, you can use Lua to configure the editor further.</p>
-
-                    <h4>Colors and Highlighting</h4>
-                    <p>Micro supports over 75 languages and has 7 default colorschemes to choose from. Micro supports 16, 256, and truecolor themes. Syntax files and colorschemes are also very simple to make.</p>
-
-                    <h4>Multiple Cursors</h4>
-                    <p>Micro has support for Sublime-style multiple cursors, giving you lots of editing power directly in your terminal.</p>
+                <div class="item">
+                    <img src="screenshots/micro-one-dark.png" alt="Flower">
                 </div>
 
-                <div class="col-sm-6">
-                    <h4>Plugin System</h4>
-                    <p>Micro supports a full-blown plugin system. Plugins are written in Lua and there is a plugin manager to automatically download and install your plugins for you.</p>
-
-                    <h4>Common Keybindings</h4>
-                    <p>Micro's keybindings are what you would expect from a simple-to-use editor. You can also rebind any of the bindings without problem in the <code>bindings.json</code> file.</p>
-
-                    <h4>Mouse Support</h4>
-                    <p>Micro has full support for the mouse. This means you can click and drag to select text, double click select by word, and triple click to select by line.</p>
-
-                    <h4>Terminal Emulator</h4>
-                    <p>Run a real interactive shell from within micro. You could open up a split with code on one side and bash on the other -- all from within micro.</p>
+                <div class="item">
+                    <img src="screenshots/micro-darcula.png" alt="Flower">
                 </div>
 
+                <div class="item">
+                    <img src="screenshots/micro-twilight.png" alt="Flower">
+                </div>
+
+                <div class="item">
+                    <img src="screenshots/micro-railscast.png" alt="Flower">
+                </div>
+
+                <div class="item">
+                    <img src="screenshots/micro-solarized.png" alt="Chania">
+                </div>
+
+                <div class="item">
+                    <img src="screenshots/micro-atom-dark.png" alt="Flower">
+                </div>
+
+                <div class="item">
+                    <img src="screenshots/micro-gruvbox.png" alt="Flower">
+                </div>
+
+                <div class="item">
+                    <img src="screenshots/micro-material.png" alt="Flower">
+                </div>
+
+                <div class="item">
+                    <img src="screenshots/micro-gotham.png" alt="Flower">
+                </div>
+
+                <div class="item">
+                    <img src="screenshots/micro-zenburn.png" alt="Flower">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#screenshots" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#screenshots" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <hr>
+
+        <div class="row features">
+            <div class="heading">
                 <div class="col-lg-12">
-                    <br>
-                    <p style="padding-top: 20px;">And much more! Check out the full list of features <a href="https://github.com/zyedidia/micro#features">here</a> as well as the built-in help system also viewable online <a href="https://github.com/zyedidia/micro/tree/master/runtime/help">here</a>.</p>
+                    <h2>Features</h2>
                 </div>
             </div>
+            <div class="col-sm-6">
+                <h4>Easy to Use</h4>
+                <p>Micro's number one feature is being easy to install (it's just a static binary with no dependencies) and easy to use.</p>
 
-            <hr>
+                <h4>Highly Customizable</h4>
+                <p>Use a simple json format to configure your options and rebind keys to your liking. If you need more power, you can use Lua to configure the editor further.</p>
 
-            <div class="row contributing">
-                <div class="col-md-6">
-                    <div class="heading">
-                        <h2>Contributing</h2>
-                    </div>
-                    <p>If you find any bugs, please report them! I am also happy to accept pull requests from anyone.</p>
-                    <p>You can use the GitHub issue tracker to report bugs, ask questions, or suggest new features.</p>
-                    <p>For a more informal setting to discuss the editor, you can join the Gitter chat.</p>
-                    <br>
-                    <div class="col-sm-6">
-                        <p style="text-align:center"><a class="btn btn-md btn-success" href="https://github.com/zyedidia/micro" role="button">View the GitHub project</a></p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p style="text-align:center"><a class="btn btn-md btn-success" href="https://gitter.im/zyedidia/micro" role="button">Join the Gitter Chat</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="heading">
-                        <h2>Testimonials</h2>
-                    </div>
-                    <ul class="testimonials">
-                        <li><p><a href="https://gitter.im/zyedidia/micro?at=57c5b2069bac566763729ac2">"Finally a simple editor that just works, with amazing mouse support."</a></p></li>
-                        <li><p><a href="https://www.reddit.com/r/golang/comments/4f8e0q/micro_a_modern_and_intuitive_terminalbased_text/d26qse8">"I really love this. This is definitely replacing nano for me."</a></p></li>
-                        <li><p><a href="https://github.com/zyedidia/micro/issues/217#issuecomment-243134046">"Keep up the great work, you have saved me from Nano and Vim suffering!"</a></p></li>
-                        <li><p><a href="https://twitter.com/kelseyhightower/status/770735086400577536">"The micro text editor is dope."</a></p></li>
-                        <li><p><a href="https://www.reddit.com/r/commandline/comments/5059qw/micro_a_modern_and_intuitive_terminalbased_text/d71t2y8">"Nice, readable source, with generous use of comments. I wonder if this is that 'idiomatic go' I keep hearing about."</a></p></li>
-                    </ul>
-                </div>
+                <h4>Colors and Highlighting</h4>
+                <p>Micro supports over 75 languages and has 7 default colorschemes to choose from. Micro supports 16, 256, and truecolor themes. Syntax files and colorschemes are also very simple to make.</p>
+
+                <h4>Multiple Cursors</h4>
+                <p>Micro has support for Sublime-style multiple cursors, giving you lots of editing power directly in your terminal.</p>
             </div>
 
-            <br>
+            <div class="col-sm-6">
+                <h4>Plugin System</h4>
+                <p>Micro supports a full-blown plugin system. Plugins are written in Lua and there is a plugin manager to automatically download and install your plugins for you.</p>
 
-            <footer>
-                <p>View the source code for this website on <a href="https://github.com/micro-editor/micro-editor.github.io">GitHub</a></p>
-            </footer>
-        </div> <!-- /container -->
+                <h4>Common Keybindings</h4>
+                <p>Micro's keybindings are what you would expect from a simple-to-use editor. You can also rebind any of the bindings without problem in the <code>bindings.json</code> file.</p>
 
+                <h4>Mouse Support</h4>
+                <p>Micro has full support for the mouse. This means you can click and drag to select text, double click select by word, and triple click to select by line.</p>
+
+                <h4>Terminal Emulator</h4>
+                <p>Run a real interactive shell from within micro. You could open up a split with code on one side and bash on the other -- all from within micro.</p>
+            </div>
+
+            <div class="col-lg-12">
+                <br>
+                <p style="padding-top: 20px;">And much more! Check out the full list of features <a href="https://github.com/zyedidia/micro#features">here</a> as well as the built-in help system also viewable online <a href="https://github.com/zyedidia/micro/tree/master/runtime/help">here</a>.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row contributing">
+            <div class="col-md-6">
+                <div class="heading">
+                    <h2>Contributing</h2>
+                </div>
+                <p>If you find any bugs, please report them! I am also happy to accept pull requests from anyone.</p>
+                <p>You can use the GitHub issue tracker to report bugs, ask questions, or suggest new features.</p>
+                <p>For a more informal setting to discuss the editor, you can join the Gitter chat.</p>
+                <br>
+                <div class="col-sm-6">
+                    <p style="text-align:center"><a class="btn btn-md btn-success" href="https://github.com/zyedidia/micro" role="button">View the GitHub project</a></p>
+                </div>
+                <div class="col-sm-6">
+                    <p style="text-align:center"><a class="btn btn-md btn-success" href="https://gitter.im/zyedidia/micro" role="button">Join the Gitter Chat</a></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="heading">
+                    <h2>Testimonials</h2>
+                </div>
+                <ul class="testimonials">
+                    <li><p><a href="https://gitter.im/zyedidia/micro?at=57c5b2069bac566763729ac2">"Finally a simple editor that just works, with amazing mouse support."</a></p></li>
+                    <li><p><a href="https://www.reddit.com/r/golang/comments/4f8e0q/micro_a_modern_and_intuitive_terminalbased_text/d26qse8">"I really love this. This is definitely replacing nano for me."</a></p></li>
+                    <li><p><a href="https://github.com/zyedidia/micro/issues/217#issuecomment-243134046">"Keep up the great work, you have saved me from Nano and Vim suffering!"</a></p></li>
+                    <li><p><a href="https://twitter.com/kelseyhightower/status/770735086400577536">"The micro text editor is dope."</a></p></li>
+                    <li><p><a href="https://www.reddit.com/r/commandline/comments/5059qw/micro_a_modern_and_intuitive_terminalbased_text/d71t2y8">"Nice, readable source, with generous use of comments. I wonder if this is that 'idiomatic go' I keep hearing about."</a></p></li>
+                </ul>
+            </div>
+        </div>
+        </main>
+
+        <br>
+
+        <footer>
+            <p>View the source code for this website on <a href="https://github.com/micro-editor/micro-editor.github.io">GitHub</a></p>
+        </footer>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="micro_files/ie10-viewport-bug-workaround.js"></script>
     </body>

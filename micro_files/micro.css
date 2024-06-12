@@ -60,11 +60,19 @@ footer {
 }
 
 /* Customize container */
+header, main, footer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @media (min-width: 768px) {
-    .container {
+    header, main, footer {
         max-width: 1100px;
     }
 }
+
 .container-narrow > hr {
     margin: 10px 0;
 }
