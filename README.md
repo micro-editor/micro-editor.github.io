@@ -2,12 +2,23 @@
 
 This is the website for the [micro text editor](https://github.com/zyedidia/micro).
 
-You can view it at https://micro-editor.github.io
+You can view it online at [micro-editor.github.io](https://micro-editor.github.io)
 
-# Contributing
+## Local Development
+
+Run any HTTP server in the directory containing `index.html`.
+
+Here is a simple example using [http-server](https://choosealicense.com/licenses/mit/):
+
+```bash
+# Uses port 8080 by default
+http-server
+```
+
+## Contributing
 
 If you find any bugs or want to contribute, just fork and open a pull request.
 
-# License
+## License
 
-This website is licensed under the MIT license.
+This website is licensed under the [MIT license](https://choosealicense.com/licenses/mit/).
