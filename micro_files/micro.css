@@ -122,6 +122,11 @@ p.lead {
     border-radius: 1px;
 }
 
+nav ul {
+    display: flex;
+    gap: 1ch;
+}
+
 nav ul.nav > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:hover {
     border-radius: 5px;
 }
