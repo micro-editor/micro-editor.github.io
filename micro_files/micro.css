@@ -105,7 +105,7 @@ p.lead {
     margin: 40px 0;
     margin-top: 0;
     margin-bottom: 0;
-    color: #2F3590; 
+    color: #2F3590;
 }
 .getting-involved {
     margin: 40px 0;
@@ -132,3 +132,7 @@ p.lead {
     border-radius: 5px;
 }
 
+.install-instructions::before {
+    content: "$ ";
+    display: inline;
+}
