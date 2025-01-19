@@ -32,24 +32,24 @@
         </script>
     </head>
     <body onload="fetchData()">
-        <div class="container">
-            <div class="header clearfix">
-                <div class="navbar-header pull-left">
-                    <a href="index.html" class="micro-logo">Micro</a>
-                </div>
-
-                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav pull-right">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li class="active"><a href="plugins.html">plugins</a></li>
-                        <li><a href="https://github.com/zyedidia/micro">development</a></li>
-                    </ul>
-                </div>
+        <header class="clearfix">
+            <div class="navbar-header pull-left">
+                <a href="index.html" class="micro-logo">Micro</a>
             </div>
 
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+
+            <nav class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li class="active"><a href="plugins.html">plugins</a></li>
+                    <li><a href="https://github.com/zyedidia/micro">development</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
             <div class="row about">
                 <div class="col-lg-12">
                     <div class="heading">
@@ -57,16 +57,16 @@
                     </div>
                     <div>
                         <input type="radio" name="searchby" value="Name"
-                          checked="true">Name</option>
+                            checked="true">Name</option>
                         <input type="radio" name="searchby" value="Description">Description</option>
                         <input type="radio" name="searchby" value="Tags">Tags</option>
                         <br/><br/>
-                      <div class="input-group">
+                        <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search plugins..." onchange="search(false)" id="keyword">
                         <span class="input-group-btn">
-                          <button id="searchbutton" class="btn btn-success" type="button" onclick="search(false)">Search</button>
+                            <button id="searchbutton" class="btn btn-success" type="button" onclick="search(false)">Search</button>
                         </span>
-                      </div><!-- /input-group -->
+                        </div><!-- /input-group -->
                     </div>
                     <hr />
                     <div class="panel-group" id="results" role="tablist" aria-multiselectable="true">
@@ -74,16 +74,14 @@
                     </div>
                 </div>
             </div>
+        </main>
 
-
-                <footer class="footer">
-                    <p>View the source code for this website on <a href="https://github.com/micro-editor/micro-editor.github.io">GitHub</a></p>
-                </footer>
-            </div> <!-- /container -->
-
-            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-            <script src="micro_files/ie10-viewport-bug-workaround.js"></script>
-            <script src="micro_files/fetch.js"></script>
-            <script src="micro_files/plugin-search.js"></script>
-        </body>
-    </html>
+        <footer>
+            <p>View the source code for this website on <a href="https://github.com/micro-editor/micro-editor.github.io">GitHub</a></p>
+        </footer>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="micro_files/ie10-viewport-bug-workaround.js"></script>
+        <script src="micro_files/fetch.js"></script>
+        <script src="micro_files/plugin-search.js"></script>
+    </body>
+</html>

@@ -32,108 +32,107 @@
         </script>
     </head>
     <body>
-
-        <div class="container">
-            <div class="header clearfix">
-                <div class="navbar-header pull-left">
-                    <a href="index.html" class="micro-logo">Micro</a>
-                </div>
-
-                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav pull-right">
-                        <li><a href="index.html">home</a></li>
-                        <li class="active"><a href="about.html">about</a></li>
-                        <li><a href="plugins.html">plugins</a></li>
-                        <li><a href="https://github.com/zyedidia/micro">development</a></li>
-                    </ul>
-                </div>
+        <header class="clearfix">
+            <div class="navbar-header pull-left">
+                <a href="index.html" class="micro-logo">Micro</a>
             </div>
 
-            <div class="row about">
-                <div class="col-lg-12">
-                    <div class="heading">
-                        <h2>About</h2>
-                    </div>
-                    <p>Micro is a terminal-based text editor that aims to be easy to use and intuitive, while also taking advantage of the full capabilities of modern terminals. It comes as one single, batteries-included, static binary with no dependencies, and you can download and use it right now.</p>
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 
-                    <p>As the name indicates, micro aims to be somewhat of a successor to the nano editor by being easy to install and use in a pinch, but micro also aims to be enjoyable to use full time, whether you work in the terminal because you prefer it (like me), or because you need to (over ssh).</p>
+            <nav class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="index.html">home</a></li>
+                    <li class="active"><a href="about.html">about</a></li>
+                    <li><a href="plugins.html">plugins</a></li>
+                    <li><a href="https://github.com/zyedidia/micro">development</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+        <div class="row about">
+            <div class="col-lg-12">
+                <div class="heading">
+                    <h2>About</h2>
+                </div>
+                <p>Micro is a terminal-based text editor that aims to be easy to use and intuitive, while also taking advantage of the full capabilities of modern terminals. It comes as one single, batteries-included, static binary with no dependencies, and you can download and use it right now.</p>
+
+                <p>As the name indicates, micro aims to be somewhat of a successor to the nano editor by being easy to install and use in a pinch, but micro also aims to be enjoyable to use full time, whether you work in the terminal because you prefer it (like me), or because you need to (over ssh).</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row docs">
+            <div class="col-lg-12">
+                <div class="heading">
+                    <h2>Documentation and Help</h2>
                 </div>
             </div>
+            <div class="col-sm-8">
+                <p>Micro has a built-in help system which you can access by pressing <code>Ctrl-E</code> and typing <code>help topic</code>. You can also press <code>Ctrl-G</code> to open the main help file. The help files are also viewable online in the GitHub repository.</p>
+                <p>I also recommend reading the <a href="https://github.com/zyedidia/micro/tree/master/runtime/help/tutorial.md">tutorial</a> for
+                    a brief introduction to the more powerful configuration features micro offers.</p>
 
-            <hr>
-
-            <div class="row docs">
-                <div class="col-lg-12">
-                    <div class="heading">
-                        <h2>Documentation and Help</h2>
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <p>Micro has a built-in help system which you can access by pressing <code>Ctrl-E</code> and typing <code>help topic</code>. You can also press <code>Ctrl-G</code> to open the main help file. The help files are also viewable online in the GitHub repository.</p>
-                    <p>I also recommend reading the <a href="https://github.com/zyedidia/micro/tree/master/runtime/help/tutorial.md">tutorial</a> for
-                        a brief introduction to the more powerful configuration features micro offers.</p>
-
-                    <br>
-                    <p>If you have any questions, feel free to open an issue in the <a href="https://github.com/zyedidia/micro/issues">GitHub issue tracker</a> or to ask more informally in the <a href="https://gitter.im/zyedidia/micro">Gitter chat</a></p>
-                </div>
-                <div class="col-sm-1">
-                </div>
-                <div class="col-sm-3">
-                    <h4>Help topics</h4>
-                    <ul style="list-style-type:none; padding:0;">
-                        <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/help.md">main help</a></li>
-                        <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/keybindings.md">keybindings</a></li>
-                        <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/commands.md">commands</a></li>
-                        <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/colors.md">colors</a></li>
-                        <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/options.md">options</a></li>
-                        <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/plugins.md">plugins</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="row faq">
-                <div class="col-lg-12">
-                    <div class="heading">
-                        <h2>FAQs</h2>
-                    </div>
-                    <h4>Does micro support Vi keybindings?</h4>
-                    <p>Currently micro does not have any sort of Vim emulation. However, this is the next major feature that is planned, so stay tuned.</p>
-                    <br>
-                    <h4>Can micro support the Command key on MacOS?</h4>
-                    <p>Unfortunately terminals don't send key events for the Command key so it's impossible for micro to make keybindings for it. One solution in iTerm2 is in 'Preferences-&gt;Keys-&gt;Remap Modifiers' and select 'Remap left command key to control.' Note that command will no longer be usable in iTerm2 for terminal keybindings (such as command-q to quit, or command-d to split).</p>
-                    <br>
-                    <h4>Can I contribute even if I don't know Go?</h4>
-                    <p>Yes! You can help by creating colorschemes or syntax files or by improving the documentation. If you know Lua you can write plugins.</p>
-                    <br>
-                    <h4>Syntax highlighting isn't working well. I only see a few colors/no colors</h4>
-                    <p>Your <code>TERM</code> variable probably indicates that your terminal only supports 16 colors. You can change it like so to enable 256 colors: <code>$ export TERM=xterm-256color</code>. Alternatively you can use one of micro's 16 color colorschemes by running <code>> set colorscheme simple</code>.
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="row logos">
-                    <div class="col-lg-12">
-                        <div class="heading">
-                            <h2>Logos</h2>
-                        </div>
-                        <p>You can download both SVG and PNG versions of the Micro logo for free in the following zip file.</p>
-
-                        <a href="micro-logos.zip">micro-logos.zip</a>
-                    </div>
-                </div>
                 <br>
+                <p>If you have any questions, feel free to open an issue in the <a href="https://github.com/zyedidia/micro/issues">GitHub issue tracker</a> or to ask more informally in the <a href="https://gitter.im/zyedidia/micro">Gitter chat</a></p>
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-3">
+                <h4>Help topics</h4>
+                <ul style="list-style-type:none; padding:0;">
+                    <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/help.md">main help</a></li>
+                    <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/keybindings.md">keybindings</a></li>
+                    <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/commands.md">commands</a></li>
+                    <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/colors.md">colors</a></li>
+                    <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/options.md">options</a></li>
+                    <li><a href="https://github.com/zyedidia/micro/tree/master/runtime/help/plugins.md">plugins</a></li>
+                </ul>
+            </div>
+        </div>
 
-                <footer class="footer">
-                    <p>View the source code for this website on <a href="https://github.com/micro-editor/micro-editor.github.io">GitHub</a></p>
-                </footer>
-            </div> <!-- /container -->
+        <hr>
 
-            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-            <script src="micro_files/ie10-viewport-bug-workaround.js"></script>
-        </body>
-    </html>
+        <div class="row faq">
+            <div class="col-lg-12">
+                <div class="heading">
+                    <h2>FAQs</h2>
+                </div>
+                <h4>Does micro support Vi keybindings?</h4>
+                <p>Currently micro does not have any sort of Vim emulation. However, this is the next major feature that is planned, so stay tuned.</p>
+                <br>
+                <h4>Can micro support the Command key on MacOS?</h4>
+                <p>Unfortunately terminals don't send key events for the Command key so it's impossible for micro to make keybindings for it. One solution in iTerm2 is in 'Preferences-&gt;Keys-&gt;Remap Modifiers' and select 'Remap left command key to control.' Note that command will no longer be usable in iTerm2 for terminal keybindings (such as command-q to quit, or command-d to split).</p>
+                <br>
+                <h4>Can I contribute even if I don't know Go?</h4>
+                <p>Yes! You can help by creating colorschemes or syntax files or by improving the documentation. If you know Lua you can write plugins.</p>
+                <br>
+                <h4>Syntax highlighting isn't working well. I only see a few colors/no colors</h4>
+                <p>Your <code>TERM</code> variable probably indicates that your terminal only supports 16 colors. You can change it like so to enable 256 colors: <code>$ export TERM=xterm-256color</code>. Alternatively you can use one of micro's 16 color colorschemes by running <code>> set colorscheme simple</code>.
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row logos">
+                <div class="col-lg-12">
+                    <div class="heading">
+                        <h2>Logos</h2>
+                    </div>
+                    <p>You can download both SVG and PNG versions of the Micro logo for free in the following zip file.</p>
+
+                    <a href="micro-logos.zip">micro-logos.zip</a>
+                </div>
+            </div>
+        </main>
+
+        <br>
+
+        <footer>
+            <p>View the source code for this website on <a href="https://github.com/micro-editor/micro-editor.github.io">GitHub</a></p>
+        </footer>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="micro_files/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
