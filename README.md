@@ -1,6 +1,6 @@
 # Micro Editor Website
 
-This is the website for the [micro text editor](https://github.com/zyedidia/micro).
+This is the website for the [micro text editor](https://github.com/micro-editor/micro).
 
 You can view it at https://micro-editor.github.io
 
